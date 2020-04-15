@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<link rel="image_src" href="./_logo/logo2_mini.jpg" />
+        <style type="text/css"> 
+            #hide{
+                display: none;
+            }
+        </style> 
+  <title>__sstsoft->INDEX, Free Alpha Studio Web Templates</title>
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2" />
+  <meta name="language" content="pl" />
+  <link href="style.css" rel="stylesheet" type="text/css" media="all" />
+
+<script type="text/javascript"> 
+
+function create_Cookie(name,value,days) {
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		var expires = "; expires="+date.toGMTString();
+	}
+	else var expires = "";
+	document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function read_Cookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+
+function erase_Cookie(name) {
+	create_Cookie(name,"",-1);
+}
+<!--pokazuje lub ukrywa blok przekazany poprzez id-->
+function block_show_hide(id){
+     var element = document.getElementById(id);
+ if (element.style.display=="none") element.style.display = "block";
+else element.style.display ="none";
+}
+<!-- pokazuje ukryte elementy po najechaniu na test-->
+ 
+function my_sub_menu_show(e){
+    
+  document.getElementById('test').onclick = function(){};
+  
+  if(e.stopPropagation) e.stopPropagation();   // W3C model
+  else e.cancelBubble = true; // IE model
+
+  document.getElementById("hide").style.display = "block";
+    
+  document.onclick = function(e){
+       var ele  = document.elementFromPoint(e.clientX, e.clientY);
+        if(ele == document.getElementById("test")){
+            my_sub_menu_hide();
+            return;
+          }
+    
+	do {
+        if (ele == document.getElementById("hide"))
+             return;
+    } while(ele = ele.parentNode);
+      
+	  my_sub_menu_hide();
+    };
+}
+<!-- ukrywa pokazane elementy po kliku na dowolnym punkcie strony-->
+function my_sub_menu_hide(){
+document.onclick = function(){};
+document.getElementById("hide").style.display = "none";
+document.getElementById('test').onclick = my_sub_menu_show;
+}
+ <!-- wyświetla date w określonym elemencie-->
+function display_date()
+{
+document.getElementById("id1").innerHTML=Date();
+}
+ <!-- Wyświetla okienko ostrzeżenia-->
+function my_alert(tekst)
+ {
+ alert("Hello World! "+tekst);
+ }
+ <!-- Funkcja publikacji linka do strony na tablicy osoby która odwiedza strone-->
+function share_on_facebook(id)
+ {
+ var adres = "http://www.facebook.com/sharer.php?u=<url>" + window.location.href;
+ window.open(adres,"Share this page on YOUR facebook timeline..","toolbar=0");
+ return false; 
+ }
+
+</script>
+</head>
+
+<body>
+<div id="main">
+<div id="top">
+<h1>_sstsoft - INDEX, katalog projektów, strona startowa(w budowie)</h1>
+<a href="http://facebook.com/sstsoft" target="_blank"> 
+<img src="./_logo/logo2_mini.jpg" alt="sstsoft" height=50px style=""></a>
+</div>
+<div id="my_menu"><ul>
+		<li><a href="#" onclick="my_alert('1'); return false;">1</a></li>
+		<li><a href="#" onclick="my_alert('2'); return false;">2</a></li>
+		<li><a href="#" onclick="my_alert('3'); return false;">3</a></li>
+		<li><a href="./KONTAKT.html">KONTAKT</a></li>
+</ul></div>
+<div id="bar_top"> &nbsp; </div>
+<div id="middle_top">
+<button style="float:left; width:20em" id="simple_share"><b>OPUBLIKUJ NA FACEBOOK'u</b></button>
+<button style="float:left; width:3em"  id="test"><b> &#86; </b></button><br>
+<div style="border:1px dotted #000;" id="hide">
+<p>To niewidoczne pole zajmuje dużo kodu javascript, bardziej skomplikowane niż rozwijane podgrupy poniższych akapitów, narożniki i obródke zrobiono tym razem przy pomocy css border-radius. Docelowo planowane cookies które zapamieta stan tych ramek(ukryte czy nie), narazie nie wiem w jakim celu wykorzystać to pole, może tu zamieścić przyciski do facebooka, google+, nk i innych?</p> 
+ 
+<button id="facebook_share" type=button style=" display:block-inline; float:right;  height:20px; width:170px; font: bold 11px Arial; margin: 0px 0 10px 0;" 
+OnClick="share_on_facebook(this.id)"> 
+SHARE THIS ON FACEBOOK</button><br>
+        </div>      		
+<br>
+<img src="./images/website_under_construction.png" border="2" alt="" width=812px>
+<br><br>
+
+<A  NAME="ogolnie"></a>
+<h3>OGÓLNIE
+<a href="#ogolnie" id="ogolnie_zwin" style="float:right; margin:0 1em" onclick="block_show_hide('ogolnie'); return true;">rozwiń &gt&gt</h3></a>
+<div  id="ogolnie" style="display:none"><br>
+<p><b>Zasadniczo to zajawka we wczesnej wersji 1.0a docelowo planowany zbiór treści zamieszczanych w różnych dedykowanych temu miejscach sieci(np. SourceForge, CodeGuru etc)
+Poletko testowe do nauki html,css,javascript i mobilizacja zebrania, udokumentowania swojej marnej twórczości
+Kilka autorskich programów, kilka projektów elektronicznych, lista polecanych programów i ciekawych stron.<br>
+Wszelkie sugestie i pomysły mile widziane, 
+</b></p>
+<br></div>
+
+<A  NAME="moje_strony"></a>
+<h3>STRONY MOJEGO AUTORSTWA
+<a href="#moje_strony" style="float:right; margin:0 1em" onclick="block_show_hide('moje_strony'); return true;">rozwiń &gt&gt</a></h3>
+<div  id="moje_strony" style="display:none"><br>
+<h4>Profil na facebook.com</h4>
+<a href="https://www.facebook.com/sstsoft?ref=hl">https://www.facebook.com/sstsoft?ref=hl</a><br>
+<h4>Programy PC</h4>
+<a href="https://dl.dropbox.com/u/10755180/PC/Panel/Readme.html">https://dl.dropbox.com/u/10755180/PC/Panel/Readme.html</a><br>
+<a href="https://dl.dropbox.com/u/10755180/PC/Resizer/Readme.html">https://dl.dropbox.com/u/10755180/PC/Resizer/Readme.html</a><br>
+<a href="https://dl.dropbox.com/u/10755180/PC/Snake_gra/Readme.html">https://dl.dropbox.com/u/10755180/PC/Snake_gra/Readme.html</a><br>
+<h4>Programy Windows CE</h4>
+<a href="https://dl.dropbox.com/u/10755180/Windows%20CE/Zegarek/Readme.html">https://dl.dropbox.com/u/10755180/Windows%20CE/Zegarek/Readme.html</a><br>
+<h4>Lekcje</h4>
+<a href="https://dl.dropbox.com/u/10755180/KoMP3endium/index.htm">https://dl.dropbox.com/u/10755180/KoMP3endium/index.htm</a><br>
+</div>
+<A  NAME="inne_strony"></a>
+<h3>INNE CIEKAWE STRONY
+<a href="#inne_strony" style="float:right; margin:0 1em" onclick="block_show_hide('inne_strony'); return true;">rozwiń &gt&gt</a></h3> 
+<div  id="inne_strony" style="display:none"><br>
+<h4>Programy PC</h4>
+<p>Treść</p>
+<a href="about:blank">__blank</a><br>
+<br></div>
+
+
+<A  NAME="moje_linki"></a>
+<h3>MOJE PROGRAMY DO POBRANIA
+<a href="#moje_linki" style="float:right; margin:0 1em" onclick="block_show_hide('moje_linki'); return true;">rozwiń &gt&gt</a></h3>
+<div  id="moje_linki" style="display:none"><br>
+<h4>Projekty Windows Mobile/Pocket PC</h4>
+<a href="about:blank">__blank</a><br>
+<h4>Programy Windows CE</h4>
+<a href="https://dl.dropbox.com/u/10755180/Windows%20CE/Zegarek/Zegarek_sfc.exe">https://dl.dropbox.com/u/10755180/Windows%20CE/Zegarek/Zegarek_sfc.exe</a><br>
+<h4>Programy PC</h4>
+<a href="https://dl.dropbox.com/u/10755180/PC/Panel/beta/Panel.exe">https://dl.dropbox.com/u/10755180/PC/Panel/beta/Panel.exe</a><br>
+<a href="https://dl.dropbox.com/u/10755180/PC/Resizer/beta/Resizer.exe">https://dl.dropbox.com/u/10755180/PC/Resizer/beta/Resizer.exe</a><br>
+<a href="https://dl.dropbox.com/u/10755180/PC/Snake_gra/Snake_gra.exe">https://dl.dropbox.com/u/10755180/PC/Snake_gra/Snake_gra.exe</a><br>
+<h4>Programy Linux</h4>
+<a href="about:blank">__blank</a><br>
+<h4>Programy Blackberry</h4>
+<a href="about:blank">__blank</a><br>
+<h4>Projekty DipTrace</h4>
+<a href="about:blank">__blank</a><br>
+<h4>Projekty Eclipse</h4>
+<a href="about:blank">__blank</a><br>
+<br><br><br>
+<br></div>
+
+<A NAME="ciekawe_linki"></a>
+
+<h3>INNE CIEKAWE PROGRAMY DO POBRANIA
+<a href="#ciekawe_linki" style="float:right; margin:0 1em" onclick="block_show_hide('ciekawe_linki'); return true;">rozwiń &gt&gt</a></h3>
+<div  id="ciekawe_linki" style="display:none"><br>
+<h4>Projekty Windows Mobile/Pocket PC</h4>
+<a href="about:blank">__blank</a><br>
+<h4>Programy Windows CE</h4>
+<a href="about:blank">__blank</a><br>
+<h4>Programy PC</h4>
+<a href="about:blank">__blank</a><br>
+<h4>Programy Linux</h4>
+<a href="about:blank">__blank</a><br>
+<h4>Programy Blackberry</h4>
+<a href="about:blank">__blank</a><br>
+<br></div>
+<br>
+</div>
+<div id="middle_bot"></div>
+<div id="bar_bot"> &nbsp; </div>
+<div id="bottom">
+<p><a href="javascript:void()" style="float:left" target="_blank" onclick="return share_on_facebook(this.id)">SHARE ON YOUR FACEBOOK TIMELINE</a>
+Stworzone na podstawie szablonu <a href="http://www.alphastudio.pl" target="_blank">Alpha
+Studio</a> 2003-2012</p>
+</div>
+</div>
+
+</body>
+    <script type="text/javascript">
+        document.getElementById('test').onclick = my_sub_menu_show;
+    </script>
+</html>

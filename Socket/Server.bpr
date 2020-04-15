@@ -1,0 +1,122 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="Server.exe"/>
+    <OBJFILES value="Project_Server.obj sstsoft_sockets.obj 
+      ..\..\Libraries\kop32\tsoft_io32.obj tsoft_mime_types.obj"/>
+    <RESFILES value="Server.res"/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES)"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value=""/>
+    <SPARELIBS value=""/>
+    <PACKAGES value="     USRPKG.bpi"/>
+    <PATHCPP value=".;..\..\Libraries\kop32"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT;_NO_VCL;_RTLDLL"/>
+    <MAINSOURCE value="Server.bpf"/>
+    <INCLUDEPATH value="..\..\Libraries\kop32;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;&quot;C:\Documents and Settings\stasiek\My Documents\My Projects\aktualne prc++\Progs\Socket&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="..\..\Libraries\kop32;&quot;C:\Program Files\Borland\CBuilder6\Projects&quot;;$(BCB)\Projects\Lib;&quot;C:\Documents and Settings\stasiek\My Documents\My Projects\aktualne prc++\Progs\Socket&quot;;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+    <OTHERFILES value=""/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-Od -H=$(BCB)\lib\vcl60.csm -Hc -Q -Vx -Ve -xf -xp -C -fp -ff -X- -r- -ps 
+      -a8 -6 -b- -k -y -v -vi- -tWC -tWM -c"/>
+    <PFLAGS value="-$YD -$W -$U -$R -$Q -$O- -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -Rr -Gz -c- -ap -Tpe -GD -s -Gn -M -v"/>
+    <OTHERFILES value=""/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0x32.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cw32mti.lib"/>
+    <OTHERFILES value=""/>
+  </LINKER>
+  <FILELIST>
+      <FILE FILENAME="Server.res" FORMNAME="" UNITNAME="Server.res" CONTAINERID="ResTool" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Server.bpf" FORMNAME="" UNITNAME="Server" CONTAINERID="BPF" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="Project_Server.cpp" FORMNAME="" UNITNAME="Project_Server" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="sstsoft_sockets.cpp" FORMNAME="" UNITNAME="sstsoft_sockets" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="..\..\Libraries\kop32\tsoft_io32.cpp" FORMNAME="" UNITNAME="tsoft_io32" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+      <FILE FILENAME="tsoft_mime_types.cpp" FORMNAME="" UNITNAME="tsoft_mime_types" CONTAINERID="CCompiler" DESIGNCLASS="" LOCALCOMMAND=""/>
+  </FILELIST>
+  <BUILDTOOLS>
+  </BUILDTOOLS>
+
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1045
+CodePage=1250
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=2
+Item0=..\..\Libraries\kop32;C:\Program Files\Borland\CBuilder6\Projects;C:\Documents and Settings\stasiek\My Documents\My Projects\aktualne prc++\Progs\Socket;$(BCB)\include;$(BCB)\include\vcl
+Item1=C:\Program Files\Borland\CBuilder6\Projects;C:\Documents and Settings\stasiek\My Documents\My Projects\aktualne prc++\Progs\Socket;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=2
+Item0=..\..\Libraries\kop32;C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;C:\Documents and Settings\stasiek\My Documents\My Projects\aktualne prc++\Progs\Socket;$(BCB)\lib\obj;$(BCB)\lib
+Item1=C:\Program Files\Borland\CBuilder6\Projects;$(BCB)\Projects\Lib;C:\Documents and Settings\stasiek\My Documents\My Projects\aktualne prc++\Progs\Socket;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+Launcher=
+UseLauncher=0
+DebugCWD=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteLauncher=
+RemoteCWD=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=1
+  </IDEOPTIONS>
+</PROJECT>

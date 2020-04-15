@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8' ?>
+<!-- C++Builder XML Project -->
+<PROJECT>
+  <MACROS>
+    <VERSION value="BCB.06.00"/>
+    <PROJECT value="Zliczanie.exe"/>
+    <OBJFILES value="Unit1.obj"/>
+    <RESFILES value=""/>
+    <DEFFILE value=""/>
+    <RESDEPEN value="$(RESFILES)"/>
+    <LIBFILES value=""/>
+    <LIBRARIES value=""/>
+    <SPARELIBS value=""/>
+    <PACKAGES value="USRPKG.bpi"/>
+    <PATHCPP value=".;"/>
+    <PATHPAS value=".;"/>
+    <PATHRC value=".;"/>
+    <PATHASM value=".;"/>
+    <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
+    <RELEASELIBPATH value="$(BCB)\lib\release"/>
+    <LINKER value="ilink32"/>
+    <USERDEFINES value="_DEBUG"/>
+    <SYSDEFINES value="NO_STRICT;_NO_VCL"/>
+    <MAINSOURCE value="Project1.bpf"/>
+    <INCLUDEPATH value="&quot;D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Zliczanie\&quot;;$(BCB)\include;$(BCB)\include\vcl"/>
+    <LIBPATH value="$(BCB)\Projects\Lib;&quot;D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Zliczanie\&quot;;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <WARNINGS value="-w-par"/>
+  </MACROS>
+  <OPTIONS>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -xf -xp -VF -C -ff -X- -ps -a8 -6 
+      -b- -k -y -v -vi- -tWC -tWM- -c"/>
+    <PFLAGS value="-$YD -$W -$R -$Q -$A8 -v -JPHNE -M"/>
+    <RFLAGS value=""/>
+    <AFLAGS value="/mx /w2 /zd"/>
+    <LFLAGS value="-D&quot;&quot; -Rr -Gz -ap -Tpe -x -Gn -v"/>
+  </OPTIONS>
+  <LINKER>
+    <ALLOBJ value="c0x32.obj $(OBJFILES)"/>
+    <ALLRES value="$(RESFILES)"/>
+    <ALLLIB value="$(LIBFILES) $(LIBRARIES) import32.lib cw32.lib"/>
+  </LINKER>
+  <IDEOPTIONS>
+[Version Info]
+IncludeVerInfo=1
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
+Debug=0
+PreRelease=0
+Special=0
+Private=0
+DLL=0
+Locale=1045
+CodePage=1250
+
+[Version Info Keys]
+CompanyName=
+FileDescription=
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
+LegalTrademarks=
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=
+
+[HistoryLists\hlIncludePath]
+Count=1
+Item0=D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Zliczanie;$(BCB)\include;$(BCB)\include\vcl
+
+[HistoryLists\hlLibraryPath]
+Count=1
+Item0=$(BCB)\Projects\Lib;D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Zliczanie;$(BCB)\lib\obj;$(BCB)\lib
+
+[HistoryLists\hlDebugSourcePath]
+Count=1
+Item0=$(BCB)\source\vcl
+
+[HistoryLists\hlConditionals]
+Count=1
+Item0=_DEBUG
+
+[Debugging]
+DebugSourceDirs=$(BCB)\source\vcl
+
+[Parameters]
+RunParams=
+HostApplication=
+RemoteHost=
+RemotePath=
+RemoteDebug=0
+
+[Compiler]
+ShowInfoMsgs=0
+LinkDebugVcl=1
+  </IDEOPTIONS>
+</PROJECT>

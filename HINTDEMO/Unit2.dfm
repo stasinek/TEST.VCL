@@ -1,0 +1,52 @@
+object Form2: TForm2
+  Left = 518
+  Top = 33
+  Width = 305
+  Height = 653
+  Caption = 'Hintbox'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnResize = FormResize
+  PixelsPerInch = 96
+  TextHeight = 13
+  object HintBox1: THintBox
+    Left = 4
+    Top = 4
+    Width = 285
+    Height = 305
+    Color = clWhite
+    Font.Charset = EASTEUROPE_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -64
+    Font.Name = 'Verdana'
+    Font.Style = []
+  end
+  object Label1: TLabel
+    Left = 140
+    Top = 320
+    Width = 18
+    Height = 13
+    Anchors = [akTop]
+    Caption = '^^'
+    Font.Charset = EASTEUROPE_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Memo1: TMemo
+    Left = 8
+    Top = 344
+    Width = 281
+    Height = 273
+    TabOrder = 0
+    WordWrap = False
+    OnChange = Memo1Change
+  end
+end
