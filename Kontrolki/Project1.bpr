@@ -9,8 +9,8 @@
     <DEFFILE value=""/>
     <RESDEPEN value="$(RESFILES) Unit1.dfm"/>
     <LIBFILES value=""/>
-    <LIBRARIES value="dclusr50.lib Vcl50.lib"/>
-    <SPARELIBS value="Vcl50.lib dclusr50.lib"/>
+    <LIBRARIES value="sstdcl50.lib dclusr50.lib Vcl50.lib"/>
+    <SPARELIBS value="Vcl50.lib dclusr50.lib sstdcl50.lib"/>
     <PACKAGES value="USRPKG.bpi"/>
     <PATHCPP value=".;"/>
     <PATHPAS value=".;"/>
@@ -19,20 +19,20 @@
     <DEBUGLIBPATH value="$(BCB)\lib\debug"/>
     <RELEASELIBPATH value="$(BCB)\lib\release"/>
     <LINKER value="ilink32"/>
-    <USERDEFINES value="_DEBUG"/>
+    <USERDEFINES value="_DEBUG;NO_WIN32_LEAN_AND_MEAN"/>
     <SYSDEFINES value="NO_STRICT;_NO_VCL"/>
     <MAINSOURCE value="Project1.cpp"/>
-    <INCLUDEPATH value="&quot;D:\stasiek\My Projects\OBSOLETE\PACKAGES&quot;;&quot;D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Zliczanie\&quot;;$(BCB)\include;$(BCB)\include\vcl;&quot;D:\OBSOLETE\PACKAGES\&quot;"/>
-    <LIBPATH value="&quot;D:\stasiek\My Projects\OBSOLETE\PACKAGES&quot;;$(BCB)\Projects\Lib;&quot;D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Zliczanie\&quot;;$(BCB)\lib\obj;$(BCB)\lib"/>
+    <INCLUDEPATH value="$(BCB)\include;$(BCB)\include\vcl;..\..\..\PACKAGES;..\..\..\OBSOLETE\PACKAGES"/>
+    <LIBPATH value="..\..\..\PACKAGES;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;..\..\..\OBSOLETE\PACKAGES"/>
     <WARNINGS value="-w-par"/>
   </MACROS>
   <OPTIONS>
-    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Vx -Ve -xf -xp -VF -C -ff -X- -ps -a8 -6 
-      -b- -k -y -v -vi- -tWC -tWM- -c"/>
-    <PFLAGS value="-$YD -$W -$R -$Q -$A8 -v -JPHNE -M"/>
+    <CFLAG1 value="-O2 -H=$(BCB)\lib\vcl60.csm -Hc -Q -Vx -Ve -xf -xp -VF -C -ff -X- -r- -ps 
+      -a8 -6 -b- -k -y -v -vi- -tWC -tWM- -c"/>
+    <PFLAGS value="-$YD -$W -$R -$Q -$O- -$A8 -v -JPHNE -M"/>
     <RFLAGS value=""/>
     <AFLAGS value="/mx /w2 /zd"/>
-    <LFLAGS value="-D&quot;&quot; -Rr -Gz -aa -Tpe -x -Gn -v"/>
+    <LFLAGS value="-D&quot;&quot; -aa -Tpe -GD -s -Gn -M -v"/>
   </OPTIONS>
   <LINKER>
     <ALLOBJ value="c0w32.obj $(OBJFILES)"/>
@@ -68,23 +68,33 @@ ProductVersion=1.0.0.0
 Comments=
 
 [HistoryLists\hlIncludePath]
-Count=3
-Item0=D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Zliczanie\;$(BCB)\include;$(BCB)\include\vcl;D:\OBSOLETE\PACKAGES
-Item1=D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Zliczanie\;$(BCB)\include;$(BCB)\include\vcl
-Item2=D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Zliczanie;$(BCB)\include;$(BCB)\include\vcl
+Count=8
+Item0=$(BCB)\include;$(BCB)\include\vcl;..\..\..\PACKAGES;..\..\..\OBSOLETE\PACKAGES
+Item1=$(BCB)\include;$(BCB)\include\vcl;..\..\..\PACKAGES
+Item2=$(BCB)\include;$(BCB)\include\vcl;..\..\PACKAGES
+Item3=$(BCB)\include;$(BCB)\include\vcl;..\..\PACKAGES\
+Item4=D:\stasiek\My Projects\OBSOLETE\PACKAGES;D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Zliczanie\;$(BCB)\include;$(BCB)\include\vcl;D:\OBSOLETE\PACKAGES\
+Item5=D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Zliczanie\;$(BCB)\include;$(BCB)\include\vcl;D:\OBSOLETE\PACKAGES
+Item6=D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Zliczanie\;$(BCB)\include;$(BCB)\include\vcl
+Item7=D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Zliczanie;$(BCB)\include;$(BCB)\include\vcl
 
 [HistoryLists\hlLibraryPath]
-Count=2
-Item0=$(BCB)\Projects\Lib;D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Zliczanie\;$(BCB)\lib\obj;$(BCB)\lib
-Item1=$(BCB)\Projects\Lib;D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Zliczanie;$(BCB)\lib\obj;$(BCB)\lib
+Count=6
+Item0=..\..\..\PACKAGES;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib;..\..\..\OBSOLETE\PACKAGES
+Item1=..\..\..\PACKAGES;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item2=..\..\PACKAGES;$(BCB)\Projects\Lib;$(BCB)\lib\obj;$(BCB)\lib
+Item3=D:\stasiek\My Projects\OBSOLETE\PACKAGES;$(BCB)\Projects\Lib;D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Zliczanie\;$(BCB)\lib\obj;$(BCB)\lib
+Item4=$(BCB)\Projects\Lib;D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Zliczanie\;$(BCB)\lib\obj;$(BCB)\lib
+Item5=$(BCB)\Projects\Lib;D:\My Projects\aktualne prc++\OBSOLETE_BCB\PROGS\Zliczanie;$(BCB)\lib\obj;$(BCB)\lib
 
 [HistoryLists\hlDebugSourcePath]
 Count=1
 Item0=$(BCB)\source\vcl
 
 [HistoryLists\hlConditionals]
-Count=1
-Item0=_DEBUG
+Count=2
+Item0=_DEBUG;NO_WIN32_LEAN_AND_MEAN
+Item1=_DEBUG
 
 [Debugging]
 DebugSourceDirs=$(BCB)\source\vcl
@@ -97,7 +107,7 @@ RemotePath=
 RemoteDebug=0
 
 [Compiler]
-ShowInfoMsgs=0
+ShowInfoMsgs=1
 LinkDebugVcl=1
   </IDEOPTIONS>
 </PROJECT>

@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 437
-  Top = 103
-  Width = 870
+  Left = 276
+  Top = 130
+  Width = 704
   Height = 502
   Caption = 'Form1'
   Color = clBtnFace
@@ -16,10 +16,8 @@ object Form1: TForm1
   object AdvancedBar1: TAdvancedBar
     Left = 108
     Top = 336
-    Width = 681
+    Width = 533
     Height = 77
-    BorderKind = bRaised
-    BorderSize = bDouble
     TextBackColor = clHighlight
     ParentFont = False
     Font.Charset = DEFAULT_CHARSET
@@ -33,17 +31,32 @@ object Form1: TForm1
     Max = 1000
   end
   object BarGraph1: TBarGraph
-    Left = 124
-    Top = 28
-    Width = 629
-    Height = 285
+    Left = 108
+    Top = 24
+    Width = 333
+    Height = 297
     Color = clBlack
     GridColor = clGreen
     BarScale = 1000
   end
+  object HintBox1: THintBox
+    Left = 448
+    Top = 24
+    Width = 189
+    Height = 297
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    Lines.Strings = (
+      'uuhuih'
+      'ihijh'
+      'nninoin')
+  end
   object Button1: TButton
     Left = 20
-    Top = 28
+    Top = 40
     Width = 75
     Height = 33
     Caption = 'Button1'
@@ -53,7 +66,7 @@ object Form1: TForm1
   object ScrollBar1: TScrollBar
     Left = 108
     Top = 428
-    Width = 681
+    Width = 533
     Height = 32
     Max = 1000
     PageSize = 0
@@ -61,8 +74,8 @@ object Form1: TForm1
     OnChange = ScrollBar1Change
   end
   object ProgressBar1: TProgressBar
-    Left = 808
-    Top = 16
+    Left = 648
+    Top = 20
     Width = 38
     Height = 445
     Min = 0
@@ -72,7 +85,39 @@ object Form1: TForm1
   end
   object Timer1: TTimer
     Interval = 100
-    Left = 72
-    Top = 56
+    Left = 20
+    Top = 284
+  end
+  object SysTray1: TSysTray
+    Hint = 'Some Hint'
+    Left = 20
+    Top = 248
+  end
+  object BrowseDialog1: TBrowseDialog
+    Title = 'Select a directory...'
+    Left = 20
+    Top = 212
+  end
+  object ExeResource1: TExeResource
+    Left = 20
+    Top = 100
+  end
+  object ExeInformation1: TExeInformation
+    CompanyName = ',ô'#18
+    FileDescription = ',ô'#18
+    FileVersion = ',ô'#18
+    InternalName = ',ô'#18
+    LegalCopyright = ',ô'#18
+    LegalTrademarks = ',ô'#18
+    OriginalFilename = ',ô'#18
+    ProductName = ',ô'#18
+    ProductVersion = ',ô'#18
+    Comments = ',ô'#18
+    Left = 20
+    Top = 140
+  end
+  object ExeDialog1: TExeDialog
+    Left = 20
+    Top = 176
   end
 end

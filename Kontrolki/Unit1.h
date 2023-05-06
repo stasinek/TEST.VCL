@@ -8,9 +8,21 @@
 #include <StdCtrls.hpp>
 #include <Forms.hpp>
 #include "ADVBAR.h"
+#include "BARGRAPH.h"
+#include "HINTBOX.h"
+#include <ComCtrls.hpp>
+#include <ExtCtrls.hpp>
+#include "ADVBAR.h"
 #include <ExtCtrls.hpp>
 #include <ComCtrls.hpp>
 #include "BARGRAPH.h"
+#include "HINTBOX.h"
+#include "BROWSEDLG.h"
+#include "EXEDLG.h"
+#include "EXEINFO.h"
+#include "EXERES.h"
+#include "FRAMEPAN.h"
+#include "SYSTRAY.h"
 //---------------------------------------------------------------------------
 class TForm1 : public TForm
 {
@@ -21,6 +33,12 @@ __published:	// IDE-managed Components
     TScrollBar *ScrollBar1;
     TProgressBar *ProgressBar1;
     TBarGraph *BarGraph1;
+    THintBox *HintBox1;
+    TSysTray *SysTray1;
+    TBrowseDialog *BrowseDialog1;
+    TExeResource *ExeResource1;
+    TExeInformation *ExeInformation1;
+    TExeDialog *ExeDialog1;
     void __fastcall ScrollBar1Change(TObject *Sender);
     void __fastcall Button1Click(TObject *Sender);
 private:	// User declarations
