@@ -17,6 +17,7 @@ __published:	// IDE-managed Components
     TMenuItem *Test11;
     TMenuItem *Test21;
     TButton *Button1;
+        TSysTray *SysTray1;
     void __fastcall Button1Click(TObject *Sender);
 private:	// User declarations
 public:		// User declarations

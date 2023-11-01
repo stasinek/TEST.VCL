@@ -43,12 +43,9 @@
 class TForm1 : public TForm
 {
 __published:	// IDE-managed Components
-    TFontDialog *FontDialog1;
-    TCheckBox *CheckBox1;
-    TCheckBox *CheckBox2;
-    TSpeedButton *SpeedButton1;
-	TCheckBox *CheckBox3;
-	TCheckBox *CheckBox4;
+        TCheckBox *CheckBox1;
+        TCheckBox *CheckBox2;
+        TFontDialog *FontDialog1;
     void __fastcall FormCreate(TObject *Sender);
     void __fastcall CheckBox1Click(TObject *Sender);
     void __fastcall FormResize(TObject *Sender);

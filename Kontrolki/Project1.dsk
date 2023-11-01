@@ -11,137 +11,23 @@ File_8=SourceModule,'C:\Program Files\Borland\CBuilder5\Projects\OBSOLETE\PROGS\
 File_9=SourceModule,'C:\Program Files\Borland\CBuilder5\Projects\OBSOLETE\PROGS\Panel.VCL\Size_frm.cpp',0,1,1,1,1,0,0
 
 [Modules]
-Module0=D:\stasiek\My Projects\OBSOLETE\PACKAGES\SYSTRAY.CPP
-Module1=D:\stasiek\My Projects\OBSOLETE\PACKAGES\SYSTRAY.h
-Module2=D:\stasiek\My Projects\OBSOLETE\PACKAGES\HINTBOX.CPP
-Module3=D:\stasiek\My Projects\OBSOLETE\PACKAGES\BROWSEDLG.cpp
-Module4=D:\stasiek\My Projects\OBSOLETE\PACKAGES\EXEDLG.h
-Module5=D:\stasiek\My Projects\OBSOLETE\PACKAGES\EXEDLG.CPP
-Module6=D:\stasiek\My Projects\OBSOLETE\PACKAGES\EXEINFO.CPP
-Module7=D:\stasiek\My Projects\OBSOLETE\PACKAGES\BARGRAPH.h
-Module8=D:\stasiek\My Projects\OBSOLETE\PACKAGES\BARGRAPH.CPP
-Module9=D:\stasiek\My Projects\OBSOLETE\PACKAGES\FRAMEPAN.h
-Module10=D:\stasiek\My Projects\OBSOLETE\PACKAGES\FRAMEPAN.CPP
-Module11=D:\stasiek\My Projects\OBSOLETE\PACKAGES\ADVBAR.h
-Module12=D:\stasiek\My Projects\OBSOLETE\PACKAGES\ADVBAR.CPP
-Module13=D:\OBSOLETE\PROGS\TEST\Test_kontrolek\Unit1.cpp
-Module14=D:\stasiek\My Projects\OBSOLETE\PROGS\TEST\Test_kontrolek\Unit1.cpp
-Count=15
+Module0=C:\SRC\OBSOLETE\PROGS\TEST.VCL\Kontrolki\Project1.bpr
+Count=1
 EditWindowCount=1
-PackageWindowCount=2
 
-[D:\stasiek\My Projects\OBSOLETE\PACKAGES\SYSTRAY.CPP]
+[C:\SRC\OBSOLETE\PROGS\TEST.VCL\Kontrolki\Project1.bpr]
 ModuleType=SourceModule
 FormState=0
 FormOnTop=0
 
-[D:\stasiek\My Projects\OBSOLETE\PACKAGES\SYSTRAY.h]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[D:\stasiek\My Projects\OBSOLETE\PACKAGES\HINTBOX.CPP]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[D:\stasiek\My Projects\OBSOLETE\PACKAGES\BROWSEDLG.cpp]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[D:\stasiek\My Projects\OBSOLETE\PACKAGES\EXEDLG.h]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[D:\stasiek\My Projects\OBSOLETE\PACKAGES\EXEDLG.CPP]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[D:\stasiek\My Projects\OBSOLETE\PACKAGES\EXEINFO.CPP]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[D:\stasiek\My Projects\OBSOLETE\PACKAGES\BARGRAPH.h]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[D:\stasiek\My Projects\OBSOLETE\PACKAGES\BARGRAPH.CPP]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[D:\stasiek\My Projects\OBSOLETE\PACKAGES\FRAMEPAN.h]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[D:\stasiek\My Projects\OBSOLETE\PACKAGES\FRAMEPAN.CPP]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[D:\stasiek\My Projects\OBSOLETE\PACKAGES\ADVBAR.h]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[D:\stasiek\My Projects\OBSOLETE\PACKAGES\ADVBAR.CPP]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[D:\OBSOLETE\PROGS\TEST\Test_kontrolek\Unit1.cpp]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[D:\stasiek\My Projects\OBSOLETE\PROGS\TEST\Test_kontrolek\Unit1.cpp]
-ModuleType=SourceModule
-FormState=0
-FormOnTop=0
-
-[D:\stasiek\My Projects\OBSOLETE\PACKAGES\dclusr50.bpk]
-FormState=0
-FormOnTop=1
-
-[C:\Program Files\Borland\CBuilder5\Projects\ProjectGroup1.bpg]
-FormState=0
-FormOnTop=0
-
-[D:\OBSOLETE\PROGS\TEST\Test_kontrolek\Project1.bpr]
-FormState=0
-FormOnTop=0
-
-[C:\Program Files\Borland\CBuilder5\Projects\OBSOLETE\PACKAGES\dclusr50.bpk]
+[C:\SRC\ProjectGroup1.bpg]
 FormState=0
 FormOnTop=0
 
 [EditWindow0]
-ViewCount=18
-CurrentView=15
+ViewCount=1
+CurrentView=0
 View0=0
-View1=1
-View2=2
-View3=3
-View4=4
-View5=5
-View6=6
-View7=7
-View8=8
-View9=9
-View10=10
-View11=11
-View12=12
-View13=13
-View14=14
-View15=15
-View16=16
-View17=17
 MessageView=MessageView@EditWindow0
 Create=1
 Visible=1
@@ -150,12 +36,12 @@ Left=210
 Top=186
 Width=1070
 Height=482
-MaxLeft=475
-MaxTop=109
+MaxLeft=-4
+MaxTop=100
 MaxWidth=1288
-MaxHeight=679
+MaxHeight=676
 ClientWidth=1280
-ClientHeight=652
+ClientHeight=649
 LeftPanelSize=0
 RightPanelSize=0
 BottomPanelSize=52
@@ -163,174 +49,11 @@ BottomPanelClients=MessageView@EditWindow0
 BottomPanelData=000004000000000000000000000000000000000000000000000100000000000000000B0000004D65737361676556696577FFFFFFFF
 
 [View0]
-Module=D:\stasiek\My Projects\OBSOLETE\PROGS\TEST\Test_kontrolek\Unit1.cpp
-CursorX=7
-CursorY=8
-TopLine=1
-LeftCol=1
-
-[View1]
-Module=D:\OBSOLETE\PROGS\TEST\Test_kontrolek\Unit1.cpp
-CursorX=15
-CursorY=31
-TopLine=11
-LeftCol=1
-
-[View2]
-Module=D:\stasiek\My Projects\OBSOLETE\PACKAGES\ADVBAR.CPP
-CursorX=1
-CursorY=28
-TopLine=1
-LeftCol=1
-
-[View3]
-Module=D:\stasiek\My Projects\OBSOLETE\PACKAGES\ADVBAR.h
-CursorX=1
-CursorY=28
-TopLine=1
-LeftCol=1
-
-[View4]
-Module=D:\stasiek\My Projects\OBSOLETE\PACKAGES\FRAMEPAN.CPP
-CursorX=1
-CursorY=28
-TopLine=1
-LeftCol=1
-
-[View5]
-Module=D:\stasiek\My Projects\OBSOLETE\PACKAGES\FRAMEPAN.h
-CursorX=1
-CursorY=28
-TopLine=1
-LeftCol=1
-
-[View6]
-Module=D:\stasiek\My Projects\OBSOLETE\PACKAGES\BARGRAPH.CPP
-CursorX=1
-CursorY=28
-TopLine=1
-LeftCol=1
-
-[View7]
-Module=D:\stasiek\My Projects\OBSOLETE\PACKAGES\BARGRAPH.h
-CursorX=1
-CursorY=28
-TopLine=1
-LeftCol=1
-
-[View8]
-Module=D:\stasiek\My Projects\OBSOLETE\PACKAGES\EXEINFO.CPP
-CursorX=16
-CursorY=5
-TopLine=1
-LeftCol=1
-
-[View9]
-Module=D:\stasiek\My Projects\OBSOLETE\PACKAGES\EXEINFO.h
-CursorX=1
-CursorY=28
-TopLine=1
-LeftCol=1
-
-[View10]
-Module=D:\stasiek\My Projects\OBSOLETE\PACKAGES\EXEDLG.CPP
-CursorX=12
-CursorY=11
-TopLine=1
-LeftCol=1
-
-[View11]
-Module=D:\stasiek\My Projects\OBSOLETE\PACKAGES\EXEDLG.h
-CursorX=1
-CursorY=28
-TopLine=1
-LeftCol=1
-
-[View12]
-Module=D:\stasiek\My Projects\OBSOLETE\PACKAGES\BROWSEDLG.cpp
-CursorX=27
-CursorY=14
-TopLine=1
-LeftCol=1
-
-[View13]
-Module=D:\stasiek\My Projects\OBSOLETE\PACKAGES\BROWSEDLG.h
-CursorX=1
-CursorY=28
-TopLine=1
-LeftCol=1
-
-[View14]
-Module=D:\stasiek\My Projects\OBSOLETE\PACKAGES\HINTBOX.CPP
+Module=C:\SRC\OBSOLETE\PROGS\TEST.VCL\Kontrolki\Project1.cpp
 CursorX=1
 CursorY=1
 TopLine=1
 LeftCol=1
-
-[View15]
-Module=D:\stasiek\My Projects\OBSOLETE\PACKAGES\SYSTRAY.CPP
-CursorX=1
-CursorY=12
-TopLine=1
-LeftCol=1
-
-[View16]
-Module=D:\stasiek\My Projects\OBSOLETE\PACKAGES\SYSTRAY.h
-CursorX=1
-CursorY=12
-TopLine=1
-LeftCol=1
-
-[View17]
-Module=D:\stasiek\My Projects\OBSOLETE\PROGS\TEST\Test_kontrolek\Unit1.h
-CursorX=24
-CursorY=8
-TopLine=1
-LeftCol=1
-
-[PackageWindow0]
-Create=1
-Visible=1
-State=0
-Left=51
-Top=280
-Width=368
-Height=239
-MaxLeft=-1
-MaxTop=-1
-ClientWidth=360
-ClientHeight=215
-TBDockHeight=244
-LRDockWidth=368
-Dockable=1
-StatusBar=0
-TextLabels=1
-Toolbar=1
-SectionWidth0=150
-SectionWidth1=210
-Module=D:\stasiek\My Projects\OBSOLETE\PACKAGES\dclusr50.bpk
-
-[PackageWindow1]
-Create=1
-Visible=0
-State=0
-Left=252
-Top=241
-Width=368
-Height=244
-MaxLeft=-1
-MaxTop=-1
-ClientWidth=360
-ClientHeight=220
-TBDockHeight=244
-LRDockWidth=368
-Dockable=1
-StatusBar=0
-TextLabels=1
-Toolbar=1
-SectionWidth0=150
-SectionWidth1=210
-Module=C:\Program Files\Borland\CBuilder5\Projects\OBSOLETE\PACKAGES\dclusr50.bpk
 
 [Watches]
 Count=0
@@ -423,6 +146,22 @@ SelectedItem=
 ExpandedItems=Font
 HiddenCategories=Legacy
 ShowStatusBar=1
+
+[CallStackWindow]
+Create=1
+Visible=0
+State=0
+Left=493
+Top=319
+Width=294
+Height=161
+MaxLeft=-1
+MaxTop=-1
+ClientWidth=286
+ClientHeight=137
+TBDockHeight=161
+LRDockWidth=294
+Dockable=1
 
 [MessageView@EditWindow0]
 Create=1

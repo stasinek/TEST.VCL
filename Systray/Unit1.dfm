@@ -32,4 +32,9 @@ object Form1: TForm1
       Caption = 'Test 2'
     end
   end
+  object SysTray1: TSysTray
+    Hint = 'Some Hint'
+    Left = 240
+    Top = 32
+  end
 end

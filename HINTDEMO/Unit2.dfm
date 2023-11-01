@@ -19,7 +19,7 @@ object Form2: TForm2
     Top = 4
     Width = 285
     Height = 305
-    Color = clWhite
+    Color = clOlive
     Font.Charset = EASTEUROPE_CHARSET
     Font.Color = clWindowText
     Font.Height = -64

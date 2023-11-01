@@ -10,8 +10,8 @@
     <DEFFILE value=""/>
     <RESDEPEN value="$(RESFILES) Unit1.dfm Unit2.dfm"/>
     <LIBFILES value=""/>
-    <LIBRARIES value="VCLX50.lib bcbsmp50.lib dclusr50.lib Vcl50.lib dclusr50.lib vclx.lib vcl.lib"/>
-    <SPARELIBS value="vcl.lib vclx.lib dclusr50.lib Vcl50.lib dclusr50.lib bcbsmp50.lib VCLX50.lib"/>
+    <LIBRARIES value="sstdcl50.lib bcbsmp50.lib Vcl50.lib sstdcl50.lib vcl.lib"/>
+    <SPARELIBS value="vcl.lib sstdcl50.lib Vcl50.lib bcbsmp50.lib sstdcl50.lib"/>
     <PACKAGES value="vcljpg.bpi ARG.bpi"/>
     <PATHCPP value=".;"/>
     <PATHPAS value=".;"/>
@@ -71,6 +71,12 @@ OriginalFilename=
 ProductName=
 ProductVersion=1.0.0.0
 Comments=
+
+[Excluded Packages]
+$(BCB)\Projects\Bpl\dclusr50.bpl=Borland User Components
+$(BCB)\Bin\bcbsmp50.bpl=Borland C++ Sample Components
+$(BCB)\Bin\dclocx50.bpl=Borland Sample Imported ActiveX Controls
+$(BCB)\Bin\bcb2kaxserver50.bpl=Borland C++Builder COM Server Components Sample Package
 
 [HistoryLists\hlIncludePath]
 Count=8

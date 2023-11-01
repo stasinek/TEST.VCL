@@ -50,9 +50,15 @@ object Form1: TForm1
     Font.Name = 'MS Sans Serif'
     Font.Style = []
     Lines.Strings = (
-      'uuhuih'
-      'ihijh'
-      'nninoin')
+      'This is test of simple HTML hint box'
+      '<b>Bold text</b> and'
+      '<i>Italic text </i>'
+      '<i>'
+      '<b>Combined bold and italic</b>'
+      '</i>'
+      ''
+      ''
+      '')
   end
   object Button1: TButton
     Left = 20
@@ -103,16 +109,20 @@ object Form1: TForm1
     Top = 100
   end
   object ExeInformation1: TExeInformation
-    CompanyName = ',ô'#18
-    FileDescription = ',ô'#18
-    FileVersion = ',ô'#18
-    InternalName = ',ô'#18
-    LegalCopyright = ',ô'#18
-    LegalTrademarks = ',ô'#18
-    OriginalFilename = ',ô'#18
-    ProductName = ',ô'#18
-    ProductVersion = ',ô'#18
-    Comments = ',ô'#18
+    CompanyName = 'Inprise Corporation'
+    FileDescription = 'C++ Builder Development Environment'
+    FileVersion = '5.0.12.34'
+    InternalName = 'BCB'
+    LegalCopyright = 'Copyright © 1996-2000 Inprise Corporation'
+    LegalTrademarks = 'Copyright © 1996-2000 Inprise Corporation'
+    OriginalFilename = 'BCB.EXE'
+    ProductName = 'Standard'
+    ProductVersion = '5.0'
+    Comments = '5.0'
+    MajorVersion = '5'
+    MinorVersion = '0'
+    Release = '12'
+    Build = '34'
     Left = 20
     Top = 140
   end
